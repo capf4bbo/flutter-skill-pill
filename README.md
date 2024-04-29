@@ -29,7 +29,7 @@ Before starting with the exercises, ensure you have Flutter 3.16 set up on your 
     - Download and install [Git](https://gitforwindows.org/) to manage source code and [Android Studio](https://developer.android.com/studio/install) to debug and compile Java or Kotlin code for Android.
 
 2. **Flutter Installation:**
-   - Download [Flutter 3.16](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
+   - Download [Flutter](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
 
 3. **Accep Android SDK Licences:**
    - Agree to the licenses of the Android SDK platform:
@@ -60,12 +60,8 @@ Using it with with the following extensions provides code completion, syntax hig
 - **Flutter Color**, ID: circlecodesolution.ccs-flutter-color
 - **Material Icon Theme**, ID: PKief.material-icon-theme
 
-## Flutter Version Used
+## FVM Install
 
-This repository uses Flutter version 3.16 to ensure compatibility and consistency across exercises.
+This repository uses an specific version of Flutter (3.16). In order to ensure compatibility and consistency across exercises fvm tool will be used to setup an specific flutter version.
 
-To check the Flutter version, you can run the following command:
-
-```bash
-flutter --version
-```
+To install it follow [FVM install website](https://fvm.app/documentation/getting-started/installation).

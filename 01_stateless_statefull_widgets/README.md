@@ -1,5 +1,19 @@
 # Stateless and Statefull Widgets
 
+## FVM Setup
+
+Activate fvm plugin
+
+~~~
+dart pub global activate fvm
+~~~
+
+Download flutter sdk
+
+~~~
+fvm use 3.16.0
+~~~
+
 ## Exercise 1: Create a Basic StatelessWidget
 
 1. **Objective:** Get familiar with creating and using a StatelessWidget.
