@@ -1,20 +1,8 @@
-# Stateless and Statefull Widgets
+# Exercises
 
-## FVM Setup
+## Stateless and Statefull Widgets
 
-Activate fvm plugin
-
-~~~
-dart pub global activate fvm
-~~~
-
-Download flutter sdk
-
-~~~
-fvm use 3.16.0
-~~~
-
-## Exercise 1: Create a Basic StatelessWidget
+### Exercise 1: Create a Basic StatelessWidget
 
 1. **Objective:** Get familiar with creating and using a StatelessWidget.
 
@@ -24,7 +12,7 @@ fvm use 3.16.0
    - Use the `Text` widget to display the text.
    - Ensure that your main class (`MyApp`) utilizes `MyTextWidget` in its `build` function.
 
-## Exercise 2: Create a StatefulWidget with a Counter
+### Exercise 2: Create a StatefulWidget with a Counter
 
 1. **Objective:** Understand how a StatefulWidget works and how to update state.
 
@@ -35,7 +23,7 @@ fvm use 3.16.0
    - Implement a method in the `State` class to handle the counter increment.
    - Update the Text with the counter value.
 
-## Exercise 3: Combine StatefulWidget and StatelessWidget
+### Exercise 3: Combine StatefulWidget and StatelessWidget
 
 1. **Objective:** Integrate the use of StatelessWidget and StatefulWidget in a simple application.
 

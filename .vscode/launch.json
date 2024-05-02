@@ -10,11 +10,6 @@
             "type": "dart"
         },
         {
-            "name": "flutter",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
             "name": "web-html",
             "request": "launch",
             "type": "dart",
