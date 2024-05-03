@@ -27,12 +27,9 @@ class StoreApp extends StatelessWidget {
           children: [
             SizedBox(
               width: min(MediaQuery.of(context).size.width * 0.7, 700),
-              height: MediaQuery.of(context).size.height * 0.7,
               child: ListView(
-                padding: const EdgeInsets.all(10),
-                children: [
-                  // TODO: Exercise 1, add ProductListTile
-                ],
+                // TODO: Exercise 1, add ProductListTile
+                children: const [],
               ),
             )
             // TODO: Exercise 2, add AddPrductButton
