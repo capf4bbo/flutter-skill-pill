@@ -32,7 +32,7 @@ class StoreApp extends StatelessWidget {
                 children: const [],
               ),
             )
-            // TODO: Exercise 2, add AddPrductButton
+            // TODO: Exercise 2, add RefreshPrductButton
             // TODO: Exercise 3
           ],
         ),
