@@ -16,7 +16,7 @@
 
 1. **Objective:** Understand how a StatefulWidget works and how to update state.
 
-2. **Description:** Create a StatefulWidget named `AddPrductButton` that is a button with an icon. Upon clicking the button, the icon should be replaced with a circular progress indicator during one second.
+2. **Description:** Change `StoreApp` to make it a StatefulWidget, create a StatelessWidget named `RefreshPrductButton`, that is a button with an icon. Upon clicking the button, the icon should be replaced with a circular progress indicator during one second, this loading state should be handled inside the `StoreApp`.
 
 3. **Hints:**
    - Use the `State` class along with `StatefulWidget`.
@@ -30,4 +30,4 @@
 2. **Description:** Add the necessary code to the button to add a new product with random values ​​after the waiting second has completed.
 
 3. **Hints:**
-   - Ensure that the `AddPrductButton` has access to the list of `ProductListTile` to dynamically add new content.
+   - Ensure that the `RefreshPrductButton` has access to the list of `ProductListTile` to dynamically add new content.
