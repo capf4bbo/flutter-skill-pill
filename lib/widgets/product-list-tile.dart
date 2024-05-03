@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutterpill01/models/product.dart';
+import 'package:flutterpill01/router.dart';
 
 class ProductListTile extends StatelessWidget {
   const ProductListTile({super.key, required this.product});
@@ -16,7 +17,8 @@ class ProductListTile extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ListTile(
         onTap: () {
-          // TODO Exercise 3
+          // Exercise 3
+          router.push("/product", extra: product);
         },
         title: Text(
           product.title,

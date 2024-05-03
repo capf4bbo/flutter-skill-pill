@@ -1,4 +1,6 @@
+import 'package:flutterpill01/models/product.dart';
 import 'package:flutterpill01/pages/home-page.dart';
+import 'package:flutterpill01/pages/product-page.dart';
 import 'package:go_router/go_router.dart';
 
 final router = GoRouter(debugLogDiagnostics: true, routes: [
@@ -7,5 +9,12 @@ final router = GoRouter(debugLogDiagnostics: true, routes: [
     path: '/',
     builder: (_, __) => HomePage(),
   ),
-  // TODO Exercise 2
+  // Exercise 2
+  GoRoute(
+    name: 'product',
+    path: '/product',
+    builder: (_, routerState) => ProductPage(
+      product: routerState.extra as Product?,
+    ),
+  ),
 ]);
