@@ -1,33 +1,29 @@
 # Exercises
 
-## Stateless and Statefull Widgets
+## Navigation and Routing​
 
-### Exercise 1: Create a Basic StatelessWidget
+### Exercise 1: Create a Product Page
 
-1. **Objective:** Get familiar with creating and using a StatelessWidget.
+1. **Description:** Create a StatelessWidget Page named `ProductPage` that shows data related to a product: title, price, description, image and rating.
 
-2. **Description:** Create a StatelessWidget named `ProductListTile` that shows within a card the different fields of a product: title, price, description, image and rating. Then, use this widget in the `build` function of main class (`StoreApp`) by wrapping it in a List View.
+2. **Hints:**
+   - Use the `ProductPage` widget to display product data.
 
-3. **Hints:**
-   - Use the `ProductListTile` widget to display product data.
-   - Ensure that your main class (`StoreApp`) utilizes `ProductListTile` in its `build` function.
+### Exercise 2: Create a GoRouter instance
 
-### Exercise 2: Create a StatefulWidget
+1. **Objective:** Understand how a GoRouter works and how to define routes.
 
-1. **Objective:** Understand how a StatefulWidget works and how to update state.
-
-2. **Description:** Change `StoreApp` to make it a StatefulWidget, create a StatelessWidget named `RefreshPrductButton`, that is a button with an icon. Upon clicking the button, the icon should be replaced with a circular progress indicator during one second, this loading state should be handled inside the `StoreApp`.
+2. **Description:** Create inside `router.dart` file a `GoRouter` instance with home and new page routes. Change `StoreApp` to work with `GoRouter`.
 
 3. **Hints:**
-   - Use the `State` class along with `StatefulWidget`.
-   - Implement a method in the `State` class to handle the icon replacement.
-   - Update the Icon with a Circular Progress Indicator.
+   - Use the `GoRouter` class.
+   - Use `MaterialApp.router`.
 
-### Exercise 3: Combine StatefulWidget and StatelessWidget
+### Exercise 3: Create a push route to Product Page
 
 1. **Objective:** Integrate the use of StatelessWidget and StatefulWidget in a simple application.
 
-2. **Description:** Add the necessary code to the button to add a new product with random values ​​after the waiting second has completed.
+2. **Description:** Add the necessary code to the `ProductListTile` to push `ProductPage` and a button to pop `ProductPage`.
 
 3. **Hints:**
-   - Ensure that the `RefreshPrductButton` has access to the list of `ProductListTile` to dynamically add new content.
+   - Use router push and pop methods.
