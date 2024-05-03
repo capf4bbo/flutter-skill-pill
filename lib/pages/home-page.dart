@@ -52,18 +52,18 @@ class _HomePageState extends State<HomePage> {
   void addProduct() {
     setState(() {
       isLoading = true;
-      Future.delayed(const Duration(seconds: 1), () {
-        setState(() {
-          // Exercise 3
-          widget.productList.add(const Product(
-              title: "Battery",
-              description:
-                  "Lorem ipsum dolor sit amet consectetur adipiscing elit proin, volutpat curabitur tellus laoreet auctor lectus vel et aenean, placerat etiam porta nullam suspendisse dis vestibulum.",
-              price: 10.4,
-              ratingRate: 3.5,
-              ratingCount: 120));
-          isLoading = false;
-        });
+    });
+    Future.delayed(const Duration(seconds: 1), () {
+      setState(() {
+        // Exercise 3
+        widget.productList.add(const Product(
+            title: "Battery",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipiscing elit proin, volutpat curabitur tellus laoreet auctor lectus vel et aenean, placerat etiam porta nullam suspendisse dis vestibulum.",
+            price: 10.4,
+            ratingRate: 3.5,
+            ratingCount: 120));
+        isLoading = false;
       });
     });
   }
