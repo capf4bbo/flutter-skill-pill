@@ -6,29 +6,28 @@
 
 1. **Objective:** Get familiar with creating and using a StatelessWidget.
 
-2. **Description:** Create a StatelessWidget named `MyTextWidget` that simply displays a static Text like "Hello, Flutter". Then, use this widget in the `build` function of your main class (`MyApp`).
+2. **Description:** Create a StatelessWidget named `ProductListTile` that shows within a card the different fields of a product: title, price, description, image and rating. Then, use this widget in the `build` function of main class (`StoreApp`) by wrapping it in a List View.
 
 3. **Hints:**
-   - Use the `Text` widget to display the text.
-   - Ensure that your main class (`MyApp`) utilizes `MyTextWidget` in its `build` function.
+   - Use the `ProductListTile` widget to display product data.
+   - Ensure that your main class (`StoreApp`) utilizes `ProductListTile` in its `build` function.
 
-### Exercise 2: Create a StatefulWidget with a Counter
+### Exercise 2: Create a StatefulWidget
 
 1. **Objective:** Understand how a StatefulWidget works and how to update state.
 
-2. **Description:** Create a StatefulWidget named `CounterWidget` that has a button and a Text. Upon clicking the button, the Text should display the number of times the button has been pressed.
+2. **Description:** Create a StatefulWidget named `AddPrductButton` that is a button with an icon. Upon clicking the button, the icon should be replaced with a circular progress indicator during one second.
 
 3. **Hints:**
    - Use the `State` class along with `StatefulWidget`.
-   - Implement a method in the `State` class to handle the counter increment.
-   - Update the Text with the counter value.
+   - Implement a method in the `State` class to handle the icon replacement.
+   - Update the Icon with a Circular Progress Indicator.
 
 ### Exercise 3: Combine StatefulWidget and StatelessWidget
 
 1. **Objective:** Integrate the use of StatelessWidget and StatefulWidget in a simple application.
 
-2. **Description:** Create an application that has a StatelessWidget named `Header` displaying a static header (e.g., the application name). Then, add a StatefulWidget named `Content` with a button. Clicking the button should dynamically change the content of the header (e.g., display a different greeting).
+2. **Description:** Add the necessary code to the button to add a new product with random values ​​after the waiting second has completed.
 
 3. **Hints:**
-   - Use the `Header` in your main class (`MyApp`) as part of the interface.
-   - Ensure that the `Content` has access to the `Header` to dynamically update its content.
+   - Ensure that the `AddPrductButton` has access to the list of `ProductListTile` to dynamically add new content.

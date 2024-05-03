@@ -1,11 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const StoreApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class StoreApp extends StatelessWidget {
+  const StoreApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +19,24 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-            toolbarHeight: 50,
-            // TODO: Exercise 3, add Header
-            flexibleSpace: Container()),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Text("Store App"),
+        ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // TODO: Exercise 1, add MyTextWidget
-            // TODO: Exercise 2, add CounterWidget
+            SizedBox(
+              width: min(MediaQuery.of(context).size.width * 0.7, 700),
+              height: MediaQuery.of(context).size.height * 0.7,
+              child: ListView(
+                padding: const EdgeInsets.all(10),
+                children: [
+                  // TODO: Exercise 1, add ProductListTile
+                ],
+              ),
+            )
+            // TODO: Exercise 2, add AddPrductButton
+            // TODO: Exercise 3
           ],
         ),
       ),
