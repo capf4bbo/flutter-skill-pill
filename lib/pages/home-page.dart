@@ -64,8 +64,8 @@ class _HomePageState extends State<HomePage> {
     itemNumber = (itemNumber) % 19 + 1;
     isLoading = true;
     setState(() {});
-    // TODO get the baseUrl from env variables
-    String baseUrl = "";
+    // ? use --dart-define-from-file <file-path-to-env-or-json-file>
+    String baseUrl = const String.fromEnvironment("BASE_URL");
     var url = Uri.parse("$baseUrl/$itemNumber");
     var response = await http.get(url);
     var decoded = jsonDecode(response.body);

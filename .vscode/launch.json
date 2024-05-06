@@ -7,7 +7,8 @@
         {
             "name": "flutter",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "toolArgs": ["--dart-define-from-file", ".env"]
         },
         {
             "name": "web-html",
@@ -17,7 +18,8 @@
             "args": [
                 "--web-renderer", "html",
                 "--web-port", "5000"
-            ]
+            ],
+            "toolArgs": ["--dart-define-from-file", ".env"]
         },
         {
             "name": "web-canvaskit",
@@ -27,7 +29,9 @@
             "args": [
                 "--web-renderer", "canvaskit",
                 "--web-port", "5000"
-            ]
+            ],
+            "toolArgs": ["--dart-define-from-file", ".env"]
+
         }
     ]
 }
