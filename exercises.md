@@ -27,3 +27,38 @@
 
 3. **Hints:**
    - Use router push and pop methods.
+
+## Web and Database Services Connection
+
+### Exercise 1: Get products data from an API
+
+1. **Description:** Replace the call of `addProduct` with an http call to fakestoreapi. Check [here](https://fakestoreapi.com/) the docs.
+
+2. **Hints:**
+   - Use the `http` package with http calls (https required to add the certificate).
+   - Use jsonDecode to deserialize the data.
+
+### Exercise 2: Store settings locally
+
+1. **Description:** `SettingsPage` contains some examples of fake data. Store it in the davice.
+
+2. **Hints:**
+   - Use the `SharedPreferences` package to store the data.
+   - Check future builder to manage builds that depends on async operations.
+
+## Environment variables
+
+### Exercise 1: Use environment variables from file
+
+1. **Description:** Pass the baseUrl variable from the environment file .env.
+
+2. **Hints:**
+   - Avoid any kind of package, flutter has a built-in feature.
+
+### Exercise 2: Automate vscode to load different .env based on environment (dev, prod...)
+
+1. **Description:** Automate the debug and launch plugin to load differents .env.
+
+2. **Hints:**
+   - Check `launch.json` from `.vscode` folder.
+
