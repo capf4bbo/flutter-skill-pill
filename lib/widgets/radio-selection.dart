@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum RadioValues { ValueA, ValueB, ValueC }
+enum RadioValue { first, second, third }
 
 class RadioSelection extends StatefulWidget {
   const RadioSelection({super.key});
@@ -10,49 +10,43 @@ class RadioSelection extends StatefulWidget {
 }
 
 class _RadioSelectionState extends State<RadioSelection> {
-  RadioValues? _character = RadioValues.ValueA;
+  RadioValue? selectedValue = RadioValue.first;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
         ListTile(
-          title: const Text('A'),
-          leading: Radio<RadioValues>(
-            value: RadioValues.ValueA,
-            groupValue: _character,
-            onChanged: (RadioValues? value) {
-              setState(() {
-                _character = value;
-              });
-            },
+          title: const Text('First'),
+          leading: Radio<RadioValue>(
+            value: RadioValue.first,
+            groupValue: selectedValue,
+            onChanged: updateValue,
           ),
         ),
         ListTile(
-          title: const Text('B'),
-          leading: Radio<RadioValues>(
-            value: RadioValues.ValueB,
-            groupValue: _character,
-            onChanged: (RadioValues? value) {
-              setState(() {
-                _character = value;
-              });
-            },
+          title: const Text('Second'),
+          leading: Radio<RadioValue>(
+            value: RadioValue.second,
+            groupValue: selectedValue,
+            onChanged: updateValue,
           ),
         ),
         ListTile(
-          title: const Text('C'),
-          leading: Radio<RadioValues>(
-            value: RadioValues.ValueC,
-            groupValue: _character,
-            onChanged: (RadioValues? value) {
-              setState(() {
-                _character = value;
-              });
-            },
+          title: const Text('Third'),
+          leading: Radio<RadioValue>(
+            value: RadioValue.third,
+            groupValue: selectedValue,
+            onChanged: updateValue,
           ),
         ),
       ],
     );
+  }
+
+  void updateValue(RadioValue? value) {
+    value = value ?? RadioValue.first;
+    selectedValue = value;
+    setState(() {});
   }
 }
