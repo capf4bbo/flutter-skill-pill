@@ -77,5 +77,5 @@ dart pub global activate fvm
 Download flutter sdk
 
 ~~~
-fvm use 3.16.3
+fvm use 3.16.0
 ~~~
