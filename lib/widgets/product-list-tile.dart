@@ -36,7 +36,7 @@ class ProductListTile extends StatelessWidget {
               ignoring: true,
               child: RatingBar.builder(
                 itemSize: 20,
-                initialRating: product.ratingRate,
+                initialRating: product.ratingRate.toDouble(),
                 minRating: 1,
                 direction: Axis.horizontal,
                 allowHalfRating: true,

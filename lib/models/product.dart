@@ -12,11 +12,17 @@ class Product {
 
   final String description;
 
-  final double price;
+  final num price;
 
-  final double ratingRate;
+  final num ratingRate;
 
-  final int ratingCount;
+  final num ratingCount;
 
   final String? imageUrl;
+  factory Product.fromMap(Map<String, dynamic> decoded) => Product(
+      title: decoded["title"],
+      description: decoded["description"],
+      price: decoded["price"],
+      ratingRate: decoded["rating"]["rate"],
+      ratingCount: decoded["rating"]["count"]);
 }

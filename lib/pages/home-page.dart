@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -17,6 +21,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool isLoading = false;
+  int itemNumber = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -55,22 +60,16 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void addProduct() {
-    setState(() {
-      isLoading = true;
-    });
-    Future.delayed(const Duration(seconds: 1), () {
-      setState(() {
-        // Exercise 3
-        productList.add(const Product(
-            title: "Battery",
-            description:
-                "Lorem ipsum dolor sit amet consectetur adipiscing elit proin, volutpat curabitur tellus laoreet auctor lectus vel et aenean, placerat etiam porta nullam suspendisse dis vestibulum.",
-            price: 10.4,
-            ratingRate: 3.5,
-            ratingCount: 120));
-        isLoading = false;
-      });
-    });
+  void addProduct() async {
+    itemNumber = (itemNumber) % 19 + 1;
+    isLoading = true;
+    setState(() {});
+    var url = Uri.parse("http://fakestoreapi.com/products/$itemNumber");
+    var response = await http.get(url);
+    var decoded = jsonDecode(response.body);
+    var newProduct = Product.fromMap(decoded);
+    productList.add(newProduct);
+    isLoading = false;
+    setState(() {});
   }
 }
