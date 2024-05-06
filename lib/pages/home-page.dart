@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterpill01/models/product.dart';
 import 'package:flutterpill01/widgets/product-list-tile.dart';
 import 'package:flutterpill01/widgets/refresh-product-button.dart';
+import 'package:go_router/go_router.dart';
 
 final List<Product> productList = [];
 
@@ -23,6 +24,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Store App"),
+        actions: [
+          IconButton(
+              onPressed: () => context.go("/settings"),
+              icon: const Icon(Icons.settings))
+        ],
       ),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
