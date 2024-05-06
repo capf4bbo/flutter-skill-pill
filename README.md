@@ -12,7 +12,7 @@ Before starting with the exercises, ensure you have Flutter 3.16 set up on your 
     - Download and install [Git](https://gitforwindows.org/) to manage source code and [Google Chrome](https://www.google.com/chrome/dr/download/) to debug JavaScript code for web apps.
 
 2. **Flutter Installation:**
-   - Download [Flutter 3.16](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
+   - Download [Flutter SDK](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
 
 3. **Validate flutter installation:**
    - To verify your installation of all the components, run the following command:
@@ -29,7 +29,7 @@ Before starting with the exercises, ensure you have Flutter 3.16 set up on your 
     - Download and install [Git](https://gitforwindows.org/) to manage source code and [Android Studio](https://developer.android.com/studio/install) to debug and compile Java or Kotlin code for Android.
 
 2. **Flutter Installation:**
-   - Download [Flutter](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
+   - Download [Flutter SDK](https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.6-stable.zip) package, extract it and add ```flutter/bin``` directory to ```PATH```.
 
 3. **Accep Android SDK Licences:**
    - Agree to the licenses of the Android SDK platform:
@@ -65,3 +65,17 @@ Using it with with the following extensions provides code completion, syntax hig
 This repository uses an specific version of Flutter (3.16). In order to ensure compatibility and consistency across exercises fvm tool will be used to setup an specific flutter version.
 
 To install it follow [FVM install website](https://fvm.app/documentation/getting-started/installation).
+
+### FVM Setup
+
+Activate fvm plugin
+
+~~~
+dart pub global activate fvm
+~~~
+
+Download flutter sdk
+
+~~~
+fvm use 3.16.3
+~~~
