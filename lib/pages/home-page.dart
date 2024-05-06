@@ -64,7 +64,9 @@ class _HomePageState extends State<HomePage> {
     itemNumber = (itemNumber) % 19 + 1;
     isLoading = true;
     setState(() {});
-    var url = Uri.parse("http://fakestoreapi.com/products/$itemNumber");
+    // TODO get the baseUrl from env variables
+    String baseUrl = "";
+    var url = Uri.parse("$baseUrl/$itemNumber");
     var response = await http.get(url);
     var decoded = jsonDecode(response.body);
     var newProduct = Product.fromMap(decoded);
