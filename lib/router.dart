@@ -1,4 +1,4 @@
-import 'package:flutterpill01/pages/home-page.dart';
+import 'package:flutterpill01/pages/home_page.dart';
 import 'package:go_router/go_router.dart';
 
 final router = GoRouter(debugLogDiagnostics: true, routes: [
