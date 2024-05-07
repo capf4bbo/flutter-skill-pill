@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterpill01/widgets/radio-selection.dart';
-import 'package:flutterpill01/widgets/switch-button.dart';
-import 'package:flutterpill01/widgets/text-input.dart';
+import 'package:flutterpill01/widgets/radio_selection.dart';
+import 'package:flutterpill01/widgets/switch_button.dart';
+import 'package:flutterpill01/widgets/text_input.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
