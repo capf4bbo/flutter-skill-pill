@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutterpill01/models/product.dart';
-import 'package:flutterpill01/widgets/product-list-tile.dart';
-import 'package:flutterpill01/widgets/refresh-product-button.dart';
+import 'package:flutterpill01/widgets/product_list_tile.dart';
+import 'package:flutterpill01/widgets/refresh_product_button.dart';
 
 void main() {
   runApp(StoreApp());
