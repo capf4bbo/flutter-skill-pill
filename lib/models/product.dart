@@ -20,9 +20,11 @@ class Product {
 
   final String? imageUrl;
   factory Product.fromMap(Map<String, dynamic> decoded) => Product(
-      title: decoded["title"],
-      description: decoded["description"],
-      price: decoded["price"],
-      ratingRate: decoded["rating"]["rate"],
-      ratingCount: decoded["rating"]["count"]);
+        title: decoded["title"],
+        description: decoded["description"],
+        price: decoded["price"],
+        ratingRate: decoded["rating"]["rate"],
+        ratingCount: decoded["rating"]["count"],
+        imageUrl: decoded["image"].toString().replaceAll("https", "http"),
+      );
 }
