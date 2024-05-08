@@ -1,13 +1,16 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutterpill01/models/product.dart';
 
 void main() {
-  runApp(const StoreApp());
+  runApp(StoreApp());
 }
 
 class StoreApp extends StatelessWidget {
-  const StoreApp({super.key});
+  StoreApp({super.key});
+
+  final List<Product> productList = [];
 
   @override
   Widget build(BuildContext context) {
