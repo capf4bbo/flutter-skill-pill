@@ -7,5 +7,5 @@ final router = GoRouter(debugLogDiagnostics: true, routes: [
     path: '/',
     builder: (_, __) => HomePage(),
   ),
-  // TODO Exercise 2
+  // TODO Exercise 1
 ]);

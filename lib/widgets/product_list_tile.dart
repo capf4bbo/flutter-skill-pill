@@ -16,7 +16,7 @@ class ProductListTile extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ListTile(
         onTap: () {
-          // TODO Exercise 3
+          // TODO Exercise 2
         },
         title: Text(
           product.title,

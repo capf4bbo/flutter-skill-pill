@@ -2,14 +2,7 @@
 
 ## Navigation and Routing​
 
-### Exercise 1: Create a Product Page
-
-1. **Description:** Create a StatelessWidget Page named `ProductPage` that shows data related to a product: title, price, description, image and rating.
-
-2. **Hints:**
-   - Use the `ProductPage` widget to display product data.
-
-### Exercise 2: Create a GoRouter instance
+### Exercise 1: Create a GoRouter instance
 
 1. **Objective:** Understand how a GoRouter works and how to define routes.
 
@@ -19,7 +12,7 @@
    - Use the `GoRouter` class.
    - Use `MaterialApp.router`.
 
-### Exercise 3: Create a push route to Product Page
+### Exercise 2: Create a push route to Product Page
 
 1. **Objective:** Integrate the use of StatelessWidget and StatefulWidget in a simple application.
 
