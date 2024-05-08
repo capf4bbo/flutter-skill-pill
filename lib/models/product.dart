@@ -12,11 +12,11 @@ class Product {
 
   final String description;
 
-  final double price;
+  final num price;
 
-  final double ratingRate;
+  final num ratingRate;
 
-  final int ratingCount;
+  final num ratingCount;
 
   final String? imageUrl;
 }
