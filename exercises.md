@@ -21,7 +21,7 @@
 Finally, you can create the .apk running the next command:
 
 ```
-fvm flutter build apk --dart-define-from-file=apk.env
+fvm flutter build apk --dart-define-from-file=.env
 ```
 
 Flutter will create the apk in the next path `build/app/outputs/flutter-apk/app-release.apk`
