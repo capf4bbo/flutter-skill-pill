@@ -21,6 +21,7 @@ class _StoreAppState extends State<StoreApp> {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
+        // TODO Exercise 2
         home: HomePage());
   }
 }
