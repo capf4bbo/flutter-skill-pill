@@ -16,3 +16,12 @@
 2. **Hints:**
    - Check `launch.json` from `.vscode` folder.
 
+## Build the apk
+
+Finally, you can create the .apk running the next command:
+
+```
+fvm flutter build apk --dart-define-from-file=apk.env
+```
+
+Flutter will create the apk in the next path `build/app/outputs/flutter-apk/app-release.apk`
